@@ -1,0 +1,9 @@
+<h3>En bref</h3>
+    <p>Le biohackerspace de Lyon est en construction, n’hésitez pas à nous contacter, on est adorables !</p>
+
+<h3>Actualités</h3>
+    <ul>
+    {% for post in site.posts limit: 5 %}
+     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
